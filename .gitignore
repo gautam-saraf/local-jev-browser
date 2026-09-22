@@ -47,3 +47,7 @@ test-results/
 credentials*
 token*
 secrets*
+
+# Local analysis / graph tools
+.graphify/
+.graphifyignore
