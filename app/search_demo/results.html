@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation Search Results</title>
+</head>
+<body>
+    <h1 id="heading">Search Results</h1>
+
+    <div id="results"></div>
+
+    <p>
+        <a href="index.html">Back to Search</a>
+    </p>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const query = (params.get("q") || "").trim();
+
+        document.getElementById("heading").innerText =
+            'Search Results for "' + query + '"';
+
+        const results = document.getElementById("results");
+
+        if (query.toLowerCase().includes("playwright")) {
+            results.innerHTML = `
+                <ul>
+                    <li><a href="playwright_overview.html">Playwright Overview</a></li>
+                    <li><a href="playwright_python.html">Playwright Python</a></li>
+                    <li><a href="playwright_java.html">Playwright Java</a></li>
+                    <li><a href="browser_automation.html">Browser Automation Guide</a></li>
+                </ul>
+            `;
+        } else {
+            results.innerHTML = `
+                <p>No exact documentation match was found.</p>
+                <ul>
+                    <li><a href="general.html">General Documentation</a></li>
+                    <li><a href="index.html">Try another search</a></li>
+                </ul>
+            `;
+        }
+    </script>
+</body>
+</html>

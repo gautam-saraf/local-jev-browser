@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation Search</title>
+</head>
+<body>
+    <h1>Documentation Search</h1>
+
+    <p>Search our developer documentation.</p>
+
+    <form id="searchForm">
+        <label for="searchBox">Search documentation</label>
+        <input
+            id="searchBox"
+            name="q"
+            type="text"
+            aria-label="Search documentation"
+            placeholder="Search documentation"
+            autocomplete="off"
+        >
+        <button type="submit">Search</button>
+    </form>
+
+    <h2>Popular topics</h2>
+    <ul>
+        <li><a href="general.html">Getting Started</a></li>
+        <li><a href="general.html">Account Settings</a></li>
+        <li><a href="general.html">Developer Community</a></li>
+    </ul>
+
+    <script>
+        document
+            .getElementById("searchForm")
+            .addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                const query =
+                    document.getElementById("searchBox").value.trim();
+
+                window.location.href =
+                    "results.html?q=" + encodeURIComponent(query);
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "local_navigation_001",
+    "type": "local",
+    "goal": "Find and open the Installation Guide for the API documentation.",
+    "start": "multi_step_site/index.html",
+    "expected": "TARGET_REACHED: LOCAL_BROWSER_JEV_INSTALLATION_GUIDE"
+  },
+  {
+    "id": "local_search_001",
+    "type": "local",
+    "goal": "Search for Playwright and open its Python installation guide.",
+    "start": "search_demo/index.html",
+    "expected": "TARGET_REACHED: PLAYWRIGHT_PYTHON_INSTALLATION"
+  },
+  {
+    "id": "real_wikipedia_001",
+    "type": "web",
+    "goal": "Search for Alan Turing and open the Alan Turing article.",
+    "start": "https://en.wikipedia.org/wiki/Main_Page",
+    "expected_url_contains": "/wiki/Alan_Turing"
+  },
+  {
+    "id": "real_playwright_001",
+    "type": "web",
+    "goal": "From the Playwright homepage, open the Python Installation documentation.",
+    "start": "https://playwright.dev/",
+    "expected_url_contains": "/python/docs/intro"
+  }
+]

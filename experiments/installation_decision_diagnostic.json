@@ -1,0 +1,323 @@
+[
+  {
+    "test": "BASELINE_SUM",
+    "payload": {
+      "context": "You are controlling a web browser.\n\nUser goal:\nSearch for Playwright and open its Python installation guide.\n\nCurrent page title:\nPlaywright Python\n\nCurrent visible page text:\nPlaywright Python Documentation for using Playwright with Python. Introduction Installation API Reference Examples Back to results\n\nAvailable actions:\nA. CLICK link \"Introduction\"\nB. CLICK link \"Installation\"\nC. CLICK link \"API Reference\"\nD. CLICK link \"Examples\"\nE. CLICK link \"Back to results\"\nF. GO BACK\nG. SCROLL DOWN\nH. SCROLL UP\n\nChoose exactly ONE next action that most directly advances the user toward the goal.\n\nRules:\n- Choose only from the available actions.\n- Do not invent an action.\n- Prefer direct progress over unrelated navigation.\n- Avoid scrolling unless necessary.\n\nRespond with only the corresponding letter.\n\nAnswer:",
+      "options": [
+        " A",
+        " B",
+        " C",
+        " D",
+        " E",
+        " F",
+        " G",
+        " H"
+      ],
+      "norm": "sum",
+      "chat": false,
+      "sep": ""
+    },
+    "result": {
+      "best": " A",
+      "best_index": 0,
+      "options": [
+        {
+          "option": " A",
+          "n_tokens": 1,
+          "logprob_sum": -1.9103927612304688,
+          "logprob_mean": -1.9103927612304688,
+          "logprob_uncond": null,
+          "score": -1.9103927612304688,
+          "probability": 0.9996435579105597
+        },
+        {
+          "option": " B",
+          "n_tokens": 1,
+          "logprob_sum": -10.285392761230469,
+          "logprob_mean": -10.285392761230469,
+          "logprob_uncond": null,
+          "score": -10.285392761230469,
+          "probability": 0.00023047768635149588
+        },
+        {
+          "option": " C",
+          "n_tokens": 1,
+          "logprob_sum": -11.410392761230469,
+          "logprob_mean": -11.410392761230469,
+          "logprob_uncond": null,
+          "score": -11.410392761230469,
+          "probability": 7.482514954505699e-05
+        },
+        {
+          "option": " D",
+          "n_tokens": 1,
+          "logprob_sum": -12.160392761230469,
+          "logprob_mean": -12.160392761230469,
+          "logprob_uncond": null,
+          "score": -12.160392761230469,
+          "probability": 3.534489794892947e-05
+        },
+        {
+          "option": " E",
+          "n_tokens": 1,
+          "logprob_sum": -13.910392761230469,
+          "logprob_mean": -13.910392761230469,
+          "logprob_uncond": null,
+          "score": -13.910392761230469,
+          "probability": 6.1420222974390245e-06
+        },
+        {
+          "option": " F",
+          "n_tokens": 1,
+          "logprob_sum": -13.535392761230469,
+          "logprob_mean": -13.535392761230469,
+          "logprob_uncond": null,
+          "score": -13.535392761230469,
+          "probability": 8.936589711167341e-06
+        },
+        {
+          "option": " G",
+          "n_tokens": 1,
+          "logprob_sum": -17.66039276123047,
+          "logprob_mean": -17.66039276123047,
+          "logprob_uncond": null,
+          "score": -17.66039276123047,
+          "probability": 1.4444651943311216e-07
+        },
+        {
+          "option": " H",
+          "n_tokens": 1,
+          "logprob_sum": -16.28539276123047,
+          "logprob_mean": -16.28539276123047,
+          "logprob_uncond": null,
+          "score": -16.28539276123047,
+          "probability": 5.712970667167966e-07
+        }
+      ],
+      "timing": {
+        "prefill_s": 2.918522458989173,
+        "options_s": 0.14848912484012544,
+        "uncond_s": 1.041218638420105e-06,
+        "total_s": 3.067012625047937,
+        "context_tokens": 186.0,
+        "option_tokens": 8.0
+      }
+    },
+    "best_action": "CLICK link \"Introduction\"",
+    "round_trip_s": 3.1345356670208275
+  },
+  {
+    "test": "GOAL_FOCUSED_SUM",
+    "payload": {
+      "context": "You are controlling a web browser.\n\nUser goal:\nSearch for Playwright and open its Python installation guide.\n\nCurrent page title:\nPlaywright Python\n\nCurrent visible page text:\nPlaywright Python Documentation for using Playwright with Python. Introduction Installation API Reference Examples Back to results\n\nAvailable actions:\nA. CLICK link \"Introduction\"\nB. CLICK link \"Installation\"\nC. CLICK link \"API Reference\"\nD. CLICK link \"Examples\"\nE. CLICK link \"Back to results\"\nF. GO BACK\nG. SCROLL DOWN\nH. SCROLL UP\n\nChoose exactly ONE next action that most directly satisfies the user's explicit goal.\n\nImportant decision rules:\n- Optimize for the user's requested destination, not the normal reading order of a documentation site.\n- If an available action directly names or semantically matches the destination requested by the user, prefer that action.\n- Do not open introductory or prerequisite material when the explicitly requested destination is already available.\n- Choose only from the listed actions.\n- Do not invent an action.\n- Do not scroll when the relevant destination is already visible.\n\nRespond with only the corresponding letter.\n\nAnswer:",
+      "options": [
+        " A",
+        " B",
+        " C",
+        " D",
+        " E",
+        " F",
+        " G",
+        " H"
+      ],
+      "norm": "sum",
+      "chat": false,
+      "sep": ""
+    },
+    "result": {
+      "best": " A",
+      "best_index": 0,
+      "options": [
+        {
+          "option": " A",
+          "n_tokens": 1,
+          "logprob_sum": -1.1381034851074219,
+          "logprob_mean": -1.1381034851074219,
+          "logprob_uncond": null,
+          "score": -1.1381034851074219,
+          "probability": 0.9997827508194136
+        },
+        {
+          "option": " B",
+          "n_tokens": 1,
+          "logprob_sum": -9.763103485107422,
+          "logprob_mean": -9.763103485107422,
+          "logprob_uncond": null,
+          "score": -9.763103485107422,
+          "probability": 0.00017952119611833826
+        },
+        {
+          "option": " C",
+          "n_tokens": 1,
+          "logprob_sum": -11.513103485107422,
+          "logprob_mean": -11.513103485107422,
+          "logprob_uncond": null,
+          "score": -11.513103485107422,
+          "probability": 3.119610618242438e-05
+        },
+        {
+          "option": " D",
+          "n_tokens": 1,
+          "logprob_sum": -13.638103485107422,
+          "logprob_mean": -13.638103485107422,
+          "logprob_uncond": null,
+          "score": -13.638103485107422,
+          "probability": 3.725843559730707e-06
+        },
+        {
+          "option": " E",
+          "n_tokens": 1,
+          "logprob_sum": -14.263103485107422,
+          "logprob_mean": -14.263103485107422,
+          "logprob_uncond": null,
+          "score": -14.263103485107422,
+          "probability": 1.994300346219738e-06
+        },
+        {
+          "option": " F",
+          "n_tokens": 1,
+          "logprob_sum": -15.263103485107422,
+          "logprob_mean": -15.263103485107422,
+          "logprob_uncond": null,
+          "score": -15.263103485107422,
+          "probability": 7.336620968953312e-07
+        },
+        {
+          "option": " G",
+          "n_tokens": 1,
+          "logprob_sum": -19.575603485107422,
+          "logprob_mean": -19.575603485107422,
+          "logprob_uncond": null,
+          "score": -19.575603485107422,
+          "probability": 9.831077722020731e-09
+        },
+        {
+          "option": " H",
+          "n_tokens": 1,
+          "logprob_sum": -17.638103485107422,
+          "logprob_mean": -17.638103485107422,
+          "logprob_uncond": null,
+          "score": -17.638103485107422,
+          "probability": 6.824120519594353e-08
+        }
+      ],
+      "timing": {
+        "prefill_s": 0.45790258306078613,
+        "options_s": 0.10522991698235273,
+        "uncond_s": 6.249174475669861e-07,
+        "total_s": 0.5631331249605864,
+        "context_tokens": 248.0,
+        "option_tokens": 8.0
+      }
+    },
+    "best_action": "CLICK link \"Introduction\"",
+    "round_trip_s": 0.5695936668198556
+  },
+  {
+    "test": "GOAL_FOCUSED_CHAT_PMI",
+    "payload": {
+      "context": "You are controlling a web browser.\n\nUser goal:\nSearch for Playwright and open its Python installation guide.\n\nCurrent page title:\nPlaywright Python\n\nCurrent visible page text:\nPlaywright Python Documentation for using Playwright with Python. Introduction Installation API Reference Examples Back to results\n\nAvailable actions:\nA. CLICK link \"Introduction\"\nB. CLICK link \"Installation\"\nC. CLICK link \"API Reference\"\nD. CLICK link \"Examples\"\nE. CLICK link \"Back to results\"\nF. GO BACK\nG. SCROLL DOWN\nH. SCROLL UP\n\nChoose exactly ONE next action that most directly satisfies the user's explicit goal.\n\nImportant decision rules:\n- Optimize for the user's requested destination, not the normal reading order of a documentation site.\n- If an available action directly names or semantically matches the destination requested by the user, prefer that action.\n- Do not open introductory or prerequisite material when the explicitly requested destination is already available.\n- Choose only from the listed actions.\n- Do not invent an action.\n- Do not scroll when the relevant destination is already visible.\n\nRespond with only the corresponding letter.\n\nAnswer:",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "norm": "pmi",
+      "chat": true,
+      "sep": ""
+    },
+    "result": {
+      "best": "B",
+      "best_index": 1,
+      "options": [
+        {
+          "option": "A",
+          "n_tokens": 1,
+          "logprob_sum": -2.813385009765625,
+          "logprob_mean": -2.813385009765625,
+          "logprob_uncond": -3.395547866821289,
+          "score": 0.5821628570556641,
+          "probability": 0.004064383935890086
+        },
+        {
+          "option": "B",
+          "n_tokens": 1,
+          "logprob_sum": -0.063385009765625,
+          "logprob_mean": -0.063385009765625,
+          "logprob_uncond": -6.145547866821289,
+          "score": 6.082162857055664,
+          "probability": 0.9945219587366027
+        },
+        {
+          "option": "C",
+          "n_tokens": 1,
+          "logprob_sum": -6.563385009765625,
+          "logprob_mean": -6.563385009765625,
+          "logprob_uncond": -6.083047866821289,
+          "score": -0.48033714294433594,
+          "probability": 0.0014046135031660209
+        },
+        {
+          "option": "D",
+          "n_tokens": 1,
+          "logprob_sum": -14.063385009765625,
+          "logprob_mean": -14.063385009765625,
+          "logprob_uncond": -5.770547866821289,
+          "score": -8.292837142944336,
+          "probability": 5.683700688265721e-07
+        },
+        {
+          "option": "E",
+          "n_tokens": 1,
+          "logprob_sum": -19.313385009765625,
+          "logprob_mean": -19.313385009765625,
+          "logprob_uncond": -6.833047866821289,
+          "score": -12.480337142944336,
+          "probability": 8.630243637804278e-09
+        },
+        {
+          "option": "F",
+          "n_tokens": 1,
+          "logprob_sum": -12.563385009765625,
+          "logprob_mean": -12.563385009765625,
+          "logprob_uncond": -6.520547866821289,
+          "score": -6.042837142944336,
+          "probability": 5.3925450703194295e-06
+        },
+        {
+          "option": "G",
+          "n_tokens": 1,
+          "logprob_sum": -13.313385009765625,
+          "logprob_mean": -13.313385009765625,
+          "logprob_uncond": -6.708047866821289,
+          "score": -6.605337142944336,
+          "probability": 3.0725795626554186e-06
+        },
+        {
+          "option": "H",
+          "n_tokens": 1,
+          "logprob_sum": -20.063385009765625,
+          "logprob_mean": -20.063385009765625,
+          "logprob_uncond": -5.958047866821289,
+          "score": -14.105337142944336,
+          "probability": 1.6993957321403782e-09
+        }
+      ],
+      "timing": {
+        "prefill_s": 0.43618766590952873,
+        "options_s": 0.1315106670372188,
+        "uncond_s": 0.15206329198554158,
+        "total_s": 0.7197616249322891,
+        "context_tokens": 256.0,
+        "option_tokens": 8.0
+      }
+    },
+    "best_action": "CLICK link \"Installation\"",
+    "round_trip_s": 0.724305875133723
+  }
+]

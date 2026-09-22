@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+app/.venv/
+benchmark/.venv/
+third_party/**/.venv/
+
+# Model weights
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
+models/
+**/models/
+.cache/
+.huggingface/
+
+# Third-party repositories
+third_party/
+
+# Raw logs
+logs/
+benchmark/results/
+benchmark/results/runlogs/
+
+# Browser artifacts
+playwright-report/
+test-results/
+
+# macOS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+credentials*
+token*
+secrets*

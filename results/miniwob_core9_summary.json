@@ -1,0 +1,688 @@
+{
+  "benchmark": "MiniWoB++ via BrowserGym",
+  "suite": "Core-9 representative suite",
+  "architecture": "OpenJEV Chat+PMI broad_v1",
+  "episodes": 90,
+  "successes": 46,
+  "success_rate": 0.5111111111111111,
+  "task_results": {
+    "click-button": {
+      "passed": 10,
+      "episodes": 10,
+      "success_rate": 1.0
+    },
+    "click-link": {
+      "passed": 3,
+      "episodes": 10,
+      "success_rate": 0.3
+    },
+    "enter-text": {
+      "passed": 10,
+      "episodes": 10,
+      "success_rate": 1.0
+    },
+    "choose-list": {
+      "passed": 10,
+      "episodes": 10,
+      "success_rate": 1.0
+    },
+    "click-checkboxes": {
+      "passed": 3,
+      "episodes": 10,
+      "success_rate": 0.3
+    },
+    "click-option": {
+      "passed": 4,
+      "episodes": 10,
+      "success_rate": 0.4
+    },
+    "click-menu": {
+      "passed": 2,
+      "episodes": 10,
+      "success_rate": 0.2
+    },
+    "click-dialog": {
+      "passed": 0,
+      "episodes": 10,
+      "success_rate": 0.0
+    },
+    "navigate-tree": {
+      "passed": 4,
+      "episodes": 10,
+      "success_rate": 0.4
+    }
+  },
+  "rows": [
+    {
+      "task": "click-button",
+      "seed": 0,
+      "status": "PASS",
+      "success": true,
+      "goal": "Click on the \"no\" button."
+    },
+    {
+      "task": "click-button",
+      "seed": 1,
+      "status": "PASS",
+      "success": true,
+      "goal": "Click on the \"cancel\" button."
+    },
+    {
+      "task": "click-button",
+      "seed": 2,
+      "status": "PASS",
+      "success": true,
+      "goal": "Click on the \"Yes\" button."
+    },
+    {
+      "task": "click-button",
+      "seed": 3,
+      "status": "PASS",
+      "success": true,
+      "goal": "Click on the \"submit\" button."
+    },
+    {
+      "task": "click-button",
+      "seed": 4,
+      "status": "PASS",
+      "success": true,
+      "goal": "Click on the \"Yes\" button."
+    },
+    {
+      "task": "click-button",
+      "seed": 5,
+      "status": "PASS",
+      "success": true,
+      "goal": "Click on the \"Cancel\" button."
+    },
+    {
+      "task": "click-button",
+      "seed": 6,
+      "status": "PASS",
+      "success": true,
+      "goal": "Click on the \"okay\" button."
+    },
+    {
+      "task": "click-button",
+      "seed": 7,
+      "status": "PASS",
+      "success": true,
+      "goal": "Click on the \"okay\" button."
+    },
+    {
+      "task": "click-button",
+      "seed": 8,
+      "status": "PASS",
+      "success": true,
+      "goal": "Click on the \"no\" button."
+    },
+    {
+      "task": "click-button",
+      "seed": 9,
+      "status": "PASS",
+      "success": true,
+      "goal": "Click on the \"Previous\" button."
+    },
+    {
+      "task": "click-link",
+      "seed": 0,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Click on the link \"et\"."
+    },
+    {
+      "task": "click-link",
+      "seed": 1,
+      "status": "PASS",
+      "success": true,
+      "goal": "Click on the link \"sed\"."
+    },
+    {
+      "task": "click-link",
+      "seed": 2,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Click on the link \"maecenas\"."
+    },
+    {
+      "task": "click-link",
+      "seed": 3,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Click on the link \"Proin\"."
+    },
+    {
+      "task": "click-link",
+      "seed": 4,
+      "status": "PASS",
+      "success": true,
+      "goal": "Click on the link \"lectus\"."
+    },
+    {
+      "task": "click-link",
+      "seed": 5,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Click on the link \"cursus\"."
+    },
+    {
+      "task": "click-link",
+      "seed": 6,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Click on the link \"justo,\"."
+    },
+    {
+      "task": "click-link",
+      "seed": 7,
+      "status": "PASS",
+      "success": true,
+      "goal": "Click on the link \"adipiscing.\"."
+    },
+    {
+      "task": "click-link",
+      "seed": 8,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Click on the link \"lorem\"."
+    },
+    {
+      "task": "click-link",
+      "seed": 9,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Click on the link \"aliquam\"."
+    },
+    {
+      "task": "enter-text",
+      "seed": 0,
+      "status": "PASS",
+      "success": true,
+      "goal": "Enter \"Myron\" into the text field and press Submit."
+    },
+    {
+      "task": "enter-text",
+      "seed": 1,
+      "status": "PASS",
+      "success": true,
+      "goal": "Enter \"Kanesha\" into the text field and press Submit."
+    },
+    {
+      "task": "enter-text",
+      "seed": 2,
+      "status": "PASS",
+      "success": true,
+      "goal": "Enter \"Cristin\" into the text field and press Submit."
+    },
+    {
+      "task": "enter-text",
+      "seed": 3,
+      "status": "PASS",
+      "success": true,
+      "goal": "Enter \"Cheree\" into the text field and press Submit."
+    },
+    {
+      "task": "enter-text",
+      "seed": 4,
+      "status": "PASS",
+      "success": true,
+      "goal": "Enter \"Briana\" into the text field and press Submit."
+    },
+    {
+      "task": "enter-text",
+      "seed": 5,
+      "status": "PASS",
+      "success": true,
+      "goal": "Enter \"Ashlea\" into the text field and press Submit."
+    },
+    {
+      "task": "enter-text",
+      "seed": 6,
+      "status": "PASS",
+      "success": true,
+      "goal": "Enter \"Jess\" into the text field and press Submit."
+    },
+    {
+      "task": "enter-text",
+      "seed": 7,
+      "status": "PASS",
+      "success": true,
+      "goal": "Enter \"Chas\" into the text field and press Submit."
+    },
+    {
+      "task": "enter-text",
+      "seed": 8,
+      "status": "PASS",
+      "success": true,
+      "goal": "Enter \"Macie\" into the text field and press Submit."
+    },
+    {
+      "task": "enter-text",
+      "seed": 9,
+      "status": "PASS",
+      "success": true,
+      "goal": "Enter \"Renda\" into the text field and press Submit."
+    },
+    {
+      "task": "choose-list",
+      "seed": 0,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select Ertha from the list and click Submit."
+    },
+    {
+      "task": "choose-list",
+      "seed": 1,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select Norfolk Island from the list and click Submit."
+    },
+    {
+      "task": "choose-list",
+      "seed": 2,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select Lavinia from the list and click Submit."
+    },
+    {
+      "task": "choose-list",
+      "seed": 3,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select Arielle from the list and click Submit."
+    },
+    {
+      "task": "choose-list",
+      "seed": 4,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select Teddy from the list and click Submit."
+    },
+    {
+      "task": "choose-list",
+      "seed": 5,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select Nicaragua from the list and click Submit."
+    },
+    {
+      "task": "choose-list",
+      "seed": 6,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select Ireland from the list and click Submit."
+    },
+    {
+      "task": "choose-list",
+      "seed": 7,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select China from the list and click Submit."
+    },
+    {
+      "task": "choose-list",
+      "seed": 8,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select Kazakhstan from the list and click Submit."
+    },
+    {
+      "task": "choose-list",
+      "seed": 9,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select Reunion from the list and click Submit."
+    },
+    {
+      "task": "click-checkboxes",
+      "seed": 0,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select Nb and click Submit."
+    },
+    {
+      "task": "click-checkboxes",
+      "seed": 1,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select Jc, s6WcI, XMHY, HJ6c and click Submit."
+    },
+    {
+      "task": "click-checkboxes",
+      "seed": 2,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select CA9b and click Submit."
+    },
+    {
+      "task": "click-checkboxes",
+      "seed": 3,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select Gh and click Submit."
+    },
+    {
+      "task": "click-checkboxes",
+      "seed": 4,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select yobHFFp, 6yzfh6u, KvTvR and click Submit."
+    },
+    {
+      "task": "click-checkboxes",
+      "seed": 5,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select qP, CHRDt and click Submit."
+    },
+    {
+      "task": "click-checkboxes",
+      "seed": 6,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select GJyaIJJ, Y9ZrHV, cUfaa and click Submit."
+    },
+    {
+      "task": "click-checkboxes",
+      "seed": 7,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select Neb and click Submit."
+    },
+    {
+      "task": "click-checkboxes",
+      "seed": 8,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select tCYOOL and click Submit."
+    },
+    {
+      "task": "click-checkboxes",
+      "seed": 9,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select rl and click Submit."
+    },
+    {
+      "task": "click-option",
+      "seed": 0,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select QWS1FL and click Submit."
+    },
+    {
+      "task": "click-option",
+      "seed": 1,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select Ycj0QW and click Submit."
+    },
+    {
+      "task": "click-option",
+      "seed": 2,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select CA9b and click Submit."
+    },
+    {
+      "task": "click-option",
+      "seed": 3,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select eGhdQ and click Submit."
+    },
+    {
+      "task": "click-option",
+      "seed": 4,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select yobHFFp and click Submit."
+    },
+    {
+      "task": "click-option",
+      "seed": 5,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select aQ7LAS and click Submit."
+    },
+    {
+      "task": "click-option",
+      "seed": 6,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select J06Ae and click Submit."
+    },
+    {
+      "task": "click-option",
+      "seed": 7,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select cp and click Submit."
+    },
+    {
+      "task": "click-option",
+      "seed": 8,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select xEAi0b and click Submit."
+    },
+    {
+      "task": "click-option",
+      "seed": 9,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select Iizv and click Submit."
+    },
+    {
+      "task": "click-menu",
+      "seed": 0,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select Lesly>Lyssa"
+    },
+    {
+      "task": "click-menu",
+      "seed": 1,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select Donetta"
+    },
+    {
+      "task": "click-menu",
+      "seed": 2,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select Amandi>Olga>Ashlee"
+    },
+    {
+      "task": "click-menu",
+      "seed": 3,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select Sonny>Milly"
+    },
+    {
+      "task": "click-menu",
+      "seed": 4,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select Chery>Clarie>Lainey"
+    },
+    {
+      "task": "click-menu",
+      "seed": 5,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select Sharona>Ekaterina"
+    },
+    {
+      "task": "click-menu",
+      "seed": 6,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select Betti>Amaleta>Tamma"
+    },
+    {
+      "task": "click-menu",
+      "seed": 7,
+      "status": "PASS",
+      "success": true,
+      "goal": "Select Jenelle"
+    },
+    {
+      "task": "click-menu",
+      "seed": 8,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select Koo>Suzanne"
+    },
+    {
+      "task": "click-menu",
+      "seed": 9,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Select Sianna>Pammie>Bellanca"
+    },
+    {
+      "task": "click-dialog",
+      "seed": 0,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Close the dialog box by clicking the \"x\"."
+    },
+    {
+      "task": "click-dialog",
+      "seed": 1,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Close the dialog box by clicking the \"x\"."
+    },
+    {
+      "task": "click-dialog",
+      "seed": 2,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Close the dialog box by clicking the \"x\"."
+    },
+    {
+      "task": "click-dialog",
+      "seed": 3,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Close the dialog box by clicking the \"x\"."
+    },
+    {
+      "task": "click-dialog",
+      "seed": 4,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Close the dialog box by clicking the \"x\"."
+    },
+    {
+      "task": "click-dialog",
+      "seed": 5,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Close the dialog box by clicking the \"x\"."
+    },
+    {
+      "task": "click-dialog",
+      "seed": 6,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Close the dialog box by clicking the \"x\"."
+    },
+    {
+      "task": "click-dialog",
+      "seed": 7,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Close the dialog box by clicking the \"x\"."
+    },
+    {
+      "task": "click-dialog",
+      "seed": 8,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Close the dialog box by clicking the \"x\"."
+    },
+    {
+      "task": "click-dialog",
+      "seed": 9,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Close the dialog box by clicking the \"x\"."
+    },
+    {
+      "task": "navigate-tree",
+      "seed": 0,
+      "status": "PASS",
+      "success": true,
+      "goal": "Navigate through the file tree. Find and click on the folder or file named \"Cheree\"."
+    },
+    {
+      "task": "navigate-tree",
+      "seed": 1,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Navigate through the file tree. Find and click on the folder or file named \"Augus\"."
+    },
+    {
+      "task": "navigate-tree",
+      "seed": 2,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Navigate through the file tree. Find and click on the folder or file named \"Deneen\"."
+    },
+    {
+      "task": "navigate-tree",
+      "seed": 3,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Navigate through the file tree. Find and click on the folder or file named \"Myron\"."
+    },
+    {
+      "task": "navigate-tree",
+      "seed": 4,
+      "status": "PASS",
+      "success": true,
+      "goal": "Navigate through the file tree. Find and click on the folder or file named \"Marcella\"."
+    },
+    {
+      "task": "navigate-tree",
+      "seed": 5,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Navigate through the file tree. Find and click on the folder or file named \"Jerald\"."
+    },
+    {
+      "task": "navigate-tree",
+      "seed": 6,
+      "status": "PASS",
+      "success": true,
+      "goal": "Navigate through the file tree. Find and click on the folder or file named \"Truman\"."
+    },
+    {
+      "task": "navigate-tree",
+      "seed": 7,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Navigate through the file tree. Find and click on the folder or file named \"Nathalie\"."
+    },
+    {
+      "task": "navigate-tree",
+      "seed": 8,
+      "status": "PASS",
+      "success": true,
+      "goal": "Navigate through the file tree. Find and click on the folder or file named \"Karrie\"."
+    },
+    {
+      "task": "navigate-tree",
+      "seed": 9,
+      "status": "FAIL",
+      "success": false,
+      "goal": "Navigate through the file tree. Find and click on the folder or file named \"Augus\"."
+    }
+  ],
+  "source_run_directory": "benchmark/results/core9_1790088956"
+}

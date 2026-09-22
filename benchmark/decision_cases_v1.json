@@ -1,0 +1,238 @@
+[
+  {
+    "id": "docs_installation",
+    "goal": "Open the Python installation documentation.",
+    "page_title": "Python Documentation",
+    "visible_text": "Python Documentation Introduction Installation API Reference Examples Changelog",
+    "actions": [
+      "CLICK link \"Introduction\"",
+      "CLICK link \"Installation\"",
+      "CLICK link \"API Reference\"",
+      "CLICK link \"Examples\"",
+      "CLICK link \"Changelog\"",
+      "GO BACK",
+      "SCROLL DOWN",
+      "SCROLL UP"
+    ],
+    "expected_action": "CLICK link \"Installation\""
+  },
+  {
+    "id": "docs_api_reference",
+    "goal": "Open the API Reference documentation.",
+    "page_title": "Developer Documentation",
+    "visible_text": "Developer Documentation Getting Started Installation Tutorials API Reference Examples",
+    "actions": [
+      "CLICK link \"Getting Started\"",
+      "CLICK link \"Installation\"",
+      "CLICK link \"Tutorials\"",
+      "CLICK link \"API Reference\"",
+      "CLICK link \"Examples\"",
+      "GO BACK",
+      "SCROLL DOWN",
+      "SCROLL UP"
+    ],
+    "expected_action": "CLICK link \"API Reference\""
+  },
+  {
+    "id": "docs_authentication",
+    "goal": "Open the Authentication documentation.",
+    "page_title": "API Documentation",
+    "visible_text": "Overview SDKs Authentication Rate Limits API Reference Webhooks",
+    "actions": [
+      "CLICK link \"Overview\"",
+      "CLICK link \"SDKs\"",
+      "CLICK link \"Authentication\"",
+      "CLICK link \"Rate Limits\"",
+      "CLICK link \"API Reference\"",
+      "CLICK link \"Webhooks\"",
+      "GO BACK",
+      "SCROLL DOWN"
+    ],
+    "expected_action": "CLICK link \"Authentication\""
+  },
+  {
+    "id": "product_pricing",
+    "goal": "Open the Pricing page.",
+    "page_title": "Product Homepage",
+    "visible_text": "Overview Enterprise Pricing Customers Documentation Login Contact",
+    "actions": [
+      "CLICK link \"Overview\"",
+      "CLICK link \"Enterprise\"",
+      "CLICK link \"Pricing\"",
+      "CLICK link \"Customers\"",
+      "CLICK link \"Documentation\"",
+      "CLICK link \"Login\"",
+      "CLICK link \"Contact\"",
+      "SCROLL DOWN"
+    ],
+    "expected_action": "CLICK link \"Pricing\""
+  },
+  {
+    "id": "product_security",
+    "goal": "Open the Security documentation.",
+    "page_title": "Platform Documentation",
+    "visible_text": "Quickstart Billing Integrations Security API Status Support",
+    "actions": [
+      "CLICK link \"Quickstart\"",
+      "CLICK link \"Billing\"",
+      "CLICK link \"Integrations\"",
+      "CLICK link \"Security\"",
+      "CLICK link \"API\"",
+      "CLICK link \"Status\"",
+      "CLICK link \"Support\"",
+      "SCROLL DOWN"
+    ],
+    "expected_action": "CLICK link \"Security\""
+  },
+  {
+    "id": "framework_python",
+    "goal": "Open the Python documentation.",
+    "page_title": "Developer Languages",
+    "visible_text": "Choose your language Node.js .NET Java Python TypeScript",
+    "actions": [
+      "CLICK link \"Node.js\"",
+      "CLICK link \".NET\"",
+      "CLICK link \"Java\"",
+      "CLICK link \"Python\"",
+      "CLICK link \"TypeScript\"",
+      "CLICK link \"Docs\"",
+      "GO BACK",
+      "SCROLL DOWN"
+    ],
+    "expected_action": "CLICK link \"Python\""
+  },
+  {
+    "id": "framework_java",
+    "goal": "Open the Java documentation.",
+    "page_title": "Developer Languages",
+    "visible_text": "Choose your language Python Node.js Java .NET TypeScript",
+    "actions": [
+      "CLICK link \"Python\"",
+      "CLICK link \"Node.js\"",
+      "CLICK link \"Java\"",
+      "CLICK link \".NET\"",
+      "CLICK link \"TypeScript\"",
+      "CLICK link \"Docs\"",
+      "GO BACK",
+      "SCROLL DOWN"
+    ],
+    "expected_action": "CLICK link \"Java\""
+  },
+  {
+    "id": "search_wikipedia",
+    "goal": "Search Wikipedia for Alan Turing.",
+    "page_title": "Wikipedia, the free encyclopedia",
+    "visible_text": "Wikipedia Search Wikipedia Main Page Donate Create account Log in",
+    "actions": [
+      "TYPE \"Alan Turing\" into textbox \"Search Wikipedia\"",
+      "TYPE \"Turing Award\" into textbox \"Search Wikipedia\"",
+      "CLICK link \"Main Page\"",
+      "CLICK link \"Donate\"",
+      "CLICK link \"Create account\"",
+      "CLICK link \"Log in\"",
+      "SCROLL DOWN",
+      "SCROLL UP"
+    ],
+    "expected_action": "TYPE \"Alan Turing\" into textbox \"Search Wikipedia\""
+  },
+  {
+    "id": "search_result_turing",
+    "goal": "Open the Alan Turing article.",
+    "page_title": "Wikipedia Search",
+    "visible_text": "Search results Alan Turing Alan Turing Institute Alan Turing law Turing Award",
+    "actions": [
+      "CLICK link \"Alan Turing Institute\"",
+      "CLICK link \"Turing Award\"",
+      "CLICK link \"Alan Turing English computer scientist (1912–1954)\"",
+      "CLICK link \"Alan Turing law\"",
+      "CLICK link \"Search for pages containing Alan Turing\"",
+      "GO BACK",
+      "SCROLL DOWN",
+      "SCROLL UP"
+    ],
+    "expected_action": "CLICK link \"Alan Turing English computer scientist (1912–1954)\""
+  },
+  {
+    "id": "support_contact",
+    "goal": "Open the Contact Support page.",
+    "page_title": "Help Center",
+    "visible_text": "FAQ System Status Community Documentation Contact Support Pricing",
+    "actions": [
+      "CLICK link \"FAQ\"",
+      "CLICK link \"System Status\"",
+      "CLICK link \"Community\"",
+      "CLICK link \"Contact Support\"",
+      "CLICK link \"Documentation\"",
+      "CLICK link \"Pricing\"",
+      "GO BACK",
+      "SCROLL DOWN"
+    ],
+    "expected_action": "CLICK link \"Contact Support\""
+  },
+  {
+    "id": "release_notes",
+    "goal": "Open the Release Notes.",
+    "page_title": "Developer Portal",
+    "visible_text": "Changelog Downloads Release Notes Roadmap Blog Documentation",
+    "actions": [
+      "CLICK link \"Changelog\"",
+      "CLICK link \"Downloads\"",
+      "CLICK link \"Release Notes\"",
+      "CLICK link \"Roadmap\"",
+      "CLICK link \"Blog\"",
+      "CLICK link \"Documentation\"",
+      "GO BACK",
+      "SCROLL DOWN"
+    ],
+    "expected_action": "CLICK link \"Release Notes\""
+  },
+  {
+    "id": "recovery_back_to_python",
+    "goal": "Return to the Playwright Python documentation.",
+    "page_title": "Introduction",
+    "visible_text": "Introduction This is not the requested destination. Home Documentation Search Back to Playwright Python",
+    "actions": [
+      "CLICK link \"Home\"",
+      "CLICK link \"Documentation Search\"",
+      "CLICK link \"Back to Playwright Python\"",
+      "GO BACK",
+      "SCROLL DOWN",
+      "SCROLL UP"
+    ],
+    "expected_action": "CLICK link \"Back to Playwright Python\""
+  },
+  {
+    "id": "sdk_download",
+    "goal": "Open the SDK Downloads page.",
+    "page_title": "Developer Portal",
+    "visible_text": "Documentation SDK Downloads Community API Installation Pricing",
+    "actions": [
+      "CLICK link \"Documentation\"",
+      "CLICK link \"SDK Downloads\"",
+      "CLICK link \"Community\"",
+      "CLICK link \"API\"",
+      "CLICK link \"Installation\"",
+      "CLICK link \"Pricing\"",
+      "GO BACK",
+      "SCROLL DOWN"
+    ],
+    "expected_action": "CLICK link \"SDK Downloads\""
+  },
+  {
+    "id": "billing_invoices",
+    "goal": "Open the Invoices section.",
+    "page_title": "Account Settings",
+    "visible_text": "Profile API Keys Invoices Team Billing Overview Usage Support",
+    "actions": [
+      "CLICK link \"Profile\"",
+      "CLICK link \"API Keys\"",
+      "CLICK link \"Invoices\"",
+      "CLICK link \"Team\"",
+      "CLICK link \"Billing Overview\"",
+      "CLICK link \"Usage\"",
+      "CLICK link \"Support\"",
+      "GO BACK"
+    ],
+    "expected_action": "CLICK link \"Invoices\""
+  }
+]
