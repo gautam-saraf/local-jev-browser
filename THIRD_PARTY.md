@@ -227,3 +227,19 @@ A new user should:
     11. run the browser demo or benchmark
 
 This separation is intentional and is part of the reproducibility design.
+
+<!-- LAYA_THIRD_PARTY_START -->
+## Laya-browser
+
+The comparison experiment uses:
+
+- Model repository: `cklxx/laya-browser`
+- Source: https://huggingface.co/cklxx/laya-browser
+- Pinned revision: `ac29aefbc3a9b541f270e122e2e36d7e7081adaa`
+
+The exact revision is stored in `LAYA_BROWSER_COMMIT.txt`.
+
+The downloaded repository, local environment and model weights are excluded
+from Git. The comparison used the normal Apple MPS inference path rather than
+the CUDA/TileLang fast path.
+<!-- LAYA_THIRD_PARTY_END -->

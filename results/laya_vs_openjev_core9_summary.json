@@ -1,0 +1,70 @@
+{
+  "experiment": "OpenJEV + Gemma 3 4B vs browser-tuned Laya v17s",
+  "benchmark": "MiniWoB Core-9 representative suite",
+  "environment": "Same Apple M2 Pro machine, BrowserGym, MiniWoB++, same tasks, same seeds, same candidate-generation harness",
+  "seeds": [0,1,2,3,4,5,6,7,8,9],
+  "episodes_per_system": 90,
+  "openjev_gemma3_4b": {
+    "successes": 46,
+    "episodes": 90,
+    "success_rate_percent": 51.11,
+    "model_decisions": 380,
+    "deterministic_selections": 11,
+    "mean_model_latency_ms": 1320.4,
+    "median_model_latency_ms": 1149.7,
+    "p95_model_latency_ms": 1793.1,
+    "min_model_latency_ms": 920.5,
+    "max_model_latency_ms": 4295.2,
+    "tasks": {
+      "click-button": 10,
+      "click-link": 3,
+      "enter-text": 10,
+      "choose-list": 10,
+      "click-checkboxes": 3,
+      "click-option": 4,
+      "click-menu": 2,
+      "click-dialog": 0,
+      "navigate-tree": 4
+    }
+  },
+  "laya_browser_v17s": {
+    "repository": "cklxx/laya-browser",
+    "revision": "ac29aefbc3a9b541f270e122e2e36d7e7081adaa",
+    "successes": 60,
+    "episodes": 90,
+    "success_rate_percent": 66.67,
+    "crashes": 0,
+    "model_decisions": 259,
+    "deterministic_selections": 11,
+    "mean_model_latency_ms": 170.4,
+    "median_model_latency_ms": 167.5,
+    "p95_model_latency_ms": 230.6,
+    "min_model_latency_ms": 111.1,
+    "max_model_latency_ms": 310.1,
+    "tasks": {
+      "click-button": 10,
+      "click-link": 3,
+      "enter-text": 10,
+      "choose-list": 10,
+      "click-checkboxes": 3,
+      "click-option": 7,
+      "click-menu": 2,
+      "click-dialog": 10,
+      "navigate-tree": 5
+    }
+  },
+  "observed_difference": {
+    "additional_successes_laya": 14,
+    "absolute_success_rate_gain_percentage_points": 15.56,
+    "relative_success_increase_percent": 30.43,
+    "mean_latency_ratio_openjev_over_laya": 7.75,
+    "median_latency_ratio_openjev_over_laya": 6.86,
+    "p95_latency_ratio_openjev_over_laya": 7.78
+  },
+  "caveats": [
+    "This is a controlled Core-9 representative evaluation, not the full MiniWoB benchmark.",
+    "The systems use different inference stacks.",
+    "Decision counts differ because the policies take different trajectories.",
+    "Latency values are observed local system decision latencies and are not hardware-independent model latency."
+  ]
+}

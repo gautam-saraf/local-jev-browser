@@ -154,3 +154,27 @@ google/gemma-3-4b-it
 Research POC.
 
 Not a production browser-control system.
+
+<!-- LAYA_COMPARISON_START -->
+## Browser-tuned Laya comparison
+
+A controlled comparison was run against the browser-tuned
+[`cklxx/laya-browser`](https://huggingface.co/cklxx/laya-browser) v17s checkpoint.
+
+Using the same local machine, BrowserGym/MiniWoB environment, Core-9 tasks,
+seeds 0-9 and candidate-generation harness:
+
+| System | Core-9 success |
+| --- | ---: |
+| OpenJEV + Gemma 3 4B | 46/90 (51.11%) |
+| Laya-browser v17s | 60/90 (66.67%) |
+
+Observed mean model-decision latency on the local M2 Pro setup was 1320.4 ms
+for OpenJEV + Gemma and 170.4 ms for Laya.
+
+This is a project-specific Core-9 representative evaluation, not a full
+MiniWoB benchmark result.
+
+See [docs/LAYA_COMPARISON.md](docs/LAYA_COMPARISON.md) for methodology,
+task-level results, failure analysis and limitations.
+<!-- LAYA_COMPARISON_END -->
